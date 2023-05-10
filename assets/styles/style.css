@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
+ 
+nav {
+  background-color: #6033A7;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+ 
+nav ul {
+  padding-inline: 4rem;
+ 
+  display: flex;
+  gap: 2rem;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+ 
+nav a:hover {
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #401F7B;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+ 
+main {
+  padding: 20px;
+  background-color: #F8EDE5;
+  display: flex;
+  gap: 1.5rem;
+}
+ 
+#content {
+  flex: 5;
+ 
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+ 
+aside {
+  flex: 1;
+}
+ 
+h2 {
+  color: #6033A7;
+}
+ 
+h3 {
+  color: #6033A7;
+}
+ 
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #6033A7;
+}
+ 
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #6033A7;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  text-shadow: -2px 0 #6033A7, 0 2px #6033A7, 2px 0 #6033A7, 0 -2px #6033A7;
+}
+ 
+.profile header {
+  text-align: center;
+}
+ 
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+ 
+  object-fit: cover;
+  object-position: center;
+}
+ 
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+ 
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+}
+ 
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+
+.my-button {
+  background-color: #6033A7;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.my-button:hover {
+  background-color: #914dff;
+}
+
+#myDIV {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
